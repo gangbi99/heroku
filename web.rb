@@ -42,7 +42,7 @@ post '/charge' do
       :amount => params[:amount], # this number should be in cents
       :currency => "usd",
 #      :customer => @customer.id,
-      :customer => "customer@gmail.com",
+      :customer => "cus_BEzsym9swMUDbR",
       :source => source,
       :description => "Example Charge",
       :shipping => params[:shipping],

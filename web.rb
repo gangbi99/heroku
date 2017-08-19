@@ -39,7 +39,8 @@ post '/charge' do
   # Create the charge on Stripe's servers - this will charge the user's card
   begin
     charge = Stripe::Charge.create(
-      :amount => params[:amount], # this number should be in cents
+#      :amount => params[:amount], # this number should be in cents
+      :amount => 200,
       :currency => "usd",
 #      :customer => @customer.id,
       :customer => "cus_BEzsym9swMUDbR",

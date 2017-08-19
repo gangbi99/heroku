@@ -42,9 +42,10 @@ post '/charge' do
       :amount => params[:amount], # this number should be in cents
       :currency => "usd",
 #      :customer => @customer.id,
+      :customer ==> Gary.Bi@wirelessinput.com,
       :source => source,
       :description => "Example Charge",
-#      :shipping => params[:shipping],
+      :shipping => params[:shipping],
     )
   rescue Stripe::StripeError => e
     status 402
